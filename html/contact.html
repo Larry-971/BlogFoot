@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="banniere">
+            <h1 class="titreBanniere">
+                Contactez-nous
+            </h1>
+        </div>
+        <nav>
+            <p><a href="accueil.html">Accueil</a></p>
+            <p><a href="presentation.html">Présentation</a></p>
+            <p><a href="contact.html" class="active3">Contact</a></p>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="infos">
+            <h3>Adresse Postale</h3>
+            <p>
+                Blog-Foot <br>
+                47 Rue du Général De Gaulle <br>
+                10002 Lausanne Cedex 9
+            </p>
+            <h3>Adresse</h3>
+            <p>
+                47 Rue du Général De Gaulle <br>
+                10002 Lausanne
+            </p>
+            <a class="lienAdresse" href="../images/adresseGrande.png">
+                <img src="../images/adresse.png" alt="adresse">
+            </a>
+            <h3>Téléphone</h3>
+            <p>
+                01 54 24 78 96
+            </p>
+        </section>
+        <form action="" method="">
+            <p>
+                <label for="nom">*Nom</label>
+                <input type="text" name="nom" id="nom" minlength="2" maxlength="20" required>
+            </p>
+            <p>
+                <label for="prenom">Prenom</label>
+                <input type="text" name="prenom" id="prenom" minlength="2" maxlength="20">
+            </p>
+            <p>
+                <label for="adresse">*Adresse</label>
+                <input type="text" name="adresse" id="adresse" minlength="2" maxlength="80" required>
+            </p>
+            <p>
+                <label for="email">*E-mail</label>
+                <input type="email" name="email" id="email" required maxlength="50">
+            </p>
+            <p>
+                <label for="pays">Pays</label>
+                <select name="pays" id="pays">
+                    <option value="france">France</option>
+                    <option value="angleterre">Angleterre</option>
+                    <option value="espagne">Espange</option>
+                    <option value="italie">Italie</option>
+                    <option value="allemagne">Allemagne</option>
+                    <option value="etatsUnis">Etats-Unis</option>
+                </select>
+            </p>
+            <p>
+                <label for="telephone">*Téléphone</label>
+                <input type="tel" name="telephone" id="telephone" minlength="10" maxlength="10" required>
+            </p>
+            <p class="message">    
+                <label for="msg" id="labelMsg">*Message</label>
+                <br>
+                <textarea name="message" id="msg" cols="40" rows="10" placeholder="Ecrivez votre message !" minlength="2" maxlength="200" required></textarea>
+            </p>
+            <!--Si le champs est remplit = Attention au Robot-->
+            <p>
+                <input type="hidden" name="donnee" id="secret">
+            </p>
+            <button type="reset">Effacer</button>
+            <button type="submit">Envoyer</button>    
+        </form>
+    </main>
+    <footer>
+        <p class="paraFooter">
+            BlogFoot - Copyright &copy; 2018 - Réalisé par Telbois Larry
+        </p>
+    </footer>
+</body>
+</html>

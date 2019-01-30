@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="../css/admi.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="banniere">
+            <h1 class="titreBanniere">
+                Ajout de nouvel article
+            </h1>
+        </div> 
+    </header>
+    <main id="formulaire">
+        <h2>Renseignez les différentes informations de l'aticle avant de le publier.</h2>
+        <form action="" enctype="multipart/form-data">
+            <p>
+                <label for="titre">
+                    *Titre
+                </label>
+                <br>
+                <input type="text" id="titre" name="titre" required minlength="2" maxlength="50">
+            </p>
+            <p>
+                <label for="url">
+                    *Url
+                </label>
+                <br>
+                <input type="file" id="url" name="url" required>
+            </p>
+            <p>
+                <label for="contenu">
+                    *Contenu
+                </label>
+                <br>
+                <textarea name="contenu" id="contenu" cols="40" rows="10" required></textarea>
+            </p>
+            <p>
+                <label for="auteur">
+                    *Auteur
+                </label>
+                <br>
+                <input type="text" id="auteur" name="auteur" required minlength="2" maxlength="20">
+            </p>
+            <button type="reset">Effacer</button>
+            <button type="button">Publier</button>
+        </form>
+    </main>
+    <footer>
+        <p class="paraFooter">
+            BlogFoot - Copyright &copy; 2018 - Réalisé par Telbois Larry
+        </p>
+    </footer>
+</body>
+</html>
